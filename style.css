@@ -1,0 +1,351 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    color:white;
+    background-color:#0C0032;
+    overflow: hidden;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+    /* background-color: black; */
+}
+
+.main-content {
+    /* border : 6px solid black; */
+    width: 80%;
+    margin-left: 20px ;
+    margin-bottom: 20px;
+    background-color: azure;
+    border-radius: 30px;
+    overflow: auto;     /*important warna scroll nhi hoga*/
+    /* z-index: 11; */
+}
+
+.main-content h1 {
+    margin-left : 50px;
+    color:black;
+}
+
+
+.banner {
+    height: 300px;
+    width: 500px;
+    margin-left: 60px;
+    border-radius: 20px;
+    box-shadow: 10px 12px 4px rgb(159, 234, 159);
+}
+
+.banner:hover {
+    box-shadow: 13px 15px 10px rgb(159, 234, 159);
+}
+h2 {
+    margin-left : 50px;
+    color:black;
+}
+
+.discover-artist {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.artist {
+    width: 180px;
+    margin-left:30px
+}
+
+.artist img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    padding: 10px;
+    padding-left: 14px;
+}
+
+.artist:hover {
+    border:2px solid black;
+    border-radius: 20px;
+    box-shadow: 5px 5px 8px #0C0032;
+}
+
+.artist p {
+    color : black;
+    text-align: center;
+    font-weight: 500;
+}
+
+.footer {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line {
+    width: 90%;
+    height: 30%;
+    border-top: 1px solid #0C0032;
+    opacity: 0.4;
+}
+
+
+
+.music-player {
+    background-color: #0c0032;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 72px;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    /* border:6px solid blue; */
+    
+}
+
+.sidebar {
+    background-color: #0C0032;
+    width:20%;
+    margin:0;
+    overflow: auto;
+    /* border-radius: 30px; */
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #282828;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left:1.5rem ;
+    margin-top: 1rem;
+
+}
+
+.card:hover {
+    box-shadow: 10px 5px 12px black;
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.card-info {
+    font-size: 0.85rem;
+    opacity: 0.5;
+}
+
+.play-img{
+    opacity: 1;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-left: 145px;
+    
+}
+
+.nav-bar {
+    position: sticky;   /* fixed issliye nhi diya kyuki usey bich me space nhi aata */
+    top:0;
+    border-radius: 30px;
+    height: 70px;
+    background-color: azure; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0 0.5rem 0;
+    z-index: 10;        /*taki scroll karne pe overlap na ho paragraph */
+}
+
+.logo {
+    background-color:#0C0032 ;
+    height: 10%;
+    border-radius: 20px;
+    margin-left: 50px;
+    margin-bottom: 40px;
+    padding-top: 15px;
+}
+
+.logo img {
+    height: auto;
+    width: 80%;
+    border-radius: 20px;
+    
+}
+.nav-options {
+    background-color: inherit;
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    margin: 3px;
+    padding-left: 10px;
+    /* border-radius: 20px; */
+    
+}
+
+.nav-options:hover {
+    background-color: #583cad;
+    
+    border-radius: 9px;
+    
+}
+
+.nav-options:hover {
+    box-shadow: 5px 2px 10px #0C0032;
+}
+
+.nav-options img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    padding: 5px;
+    
+}
+
+.nav-p {
+    color : white;
+    margin-left: 1rem ;
+    
+}
+
+.player {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+
+
+}
+.player-bar{
+    width: 100%;
+    padding: 1rem;
+    height: 30%;
+}
+
+.main-player-option {
+    height: 70%;
+}
+
+.music-info {
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    
+}
+
+.player-controls {
+    width: 50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px ;
+}
+
+.music-option {
+    width: 25%;
+    padding-top : 10px
+}
+
+.player-controls img{
+    height: 1rem;
+    margin-right:1.75rem ;
+    opacity: 0.8;
+}
+.player-controls img:hover {
+    opacity: 1;
+}
+.playback-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-bar {
+    width: 100%;
+    appearance: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.progress-bar::-webkit-slider-runnable-track {
+    background-color: azure;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+
+.progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    background-color: #1b50d7;
+    border-radius: 50px;
+    margin-top: -8px;
+}
+
+
+.playing-img {
+    height: 40px;
+    width: 40px;
+    border-radius: 8px;
+    margin-left: 10px;
+    margin-right: 20px;
+
+}
+.describe p {
+    line-height: 0.2px;
+}
+
+.playing-artist {
+    font-weight: 300px;
+    font-size: small;
+}
+.search-bar {
+    width: 30rem;
+    height: 2rem;
+    margin-left: 60px;
+    /* padding-left:10px; */
+    border-radius: 20px ;
+    text-align: center;
+    
+}
+
+
+.user i {
+    margin-right: 50px;
+}
+
+.search i {
+    color :  #0c0032;
+    padding-left: 68px;
+    padding-top: 10px;
+    position: absolute;
+    
+}
+
+.home {
+    display: flexbox;
+}
+.home img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.home a {
+    text-decoration: none;
+    color:white;
+    margin: 1rem;
+    
+    
+}
+
