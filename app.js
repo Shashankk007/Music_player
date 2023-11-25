@@ -57,7 +57,19 @@ function updateProgressBar() {
     currentTimeDisplay.innerHTML = minutes + ":" + seconds;
   }
 
-  
+   //To update length of song
+  let totalDurationDisplay = document.querySelector(".tot-time");
+  audioElement.addEventListener("loadedmetadata", function () {
+    updateTotalDuration();
+  });
+
+  function updateTotalDuration() {
+    let minutes = Math.floor(audioElement.duration / 60);
+    let seconds = Math.floor(audioElement.duration % 60);
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+    totalDurationDisplay.innerHTML = minutes + ":" + seconds;
+  }
+
 
   progressBar.addEventListener('input', () => {
     // Use 'input' event instead of 'change' for a more responsive interaction
